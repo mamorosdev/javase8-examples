@@ -1,10 +1,10 @@
 # javase8-examples
 
-Java SE 8 examples of new features. Lambdas, Streams, Dates...
+Java SE 8 examples of new features. Lambda functions, Streams, Dates...
 
-### com/javaintro 
-Sort a list of people by name without and with Java 8 Lambdas.
+### java8intro 
+Examples to prove that common collection operations are very easy with Java 8.
 
 ### optional 
-A better way to manage NullPointerExceptions.
+A better way to manage NullPointerException avaliable with Java 8.
 
