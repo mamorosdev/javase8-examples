@@ -5,19 +5,19 @@ import java.time.format.DateTimeFormatter;
 import java.lang.Math;
 
 /* 
- * Diferencia entre 2 fechas.
+ * Ejemplos tratamiento de fechas en Java 8. 
  */
 public class Java8DatesIntro {
   
   public static void main(String[] args){
     
     // Test 1. Dias que quedan para fin de mes.
-   	final LocalDate hoy = LocalDate.now();
-	final LocalDate finAno = LocalDate.now().with(TemporalAdjusters.lastDayOfMonth());
+    final LocalDate hoy = LocalDate.now();
+    final LocalDate finAno = LocalDate.now().with(TemporalAdjusters.lastDayOfMonth());
     final int diasHastaFinMesJava8 = Period.between(hoy, finAno).getDays();
     System.out.println("diasHastaFinMesJava8 = " + diasHastaFinMesJava8);  
     
-  	// Test 2. Edad a partir de la fecha de nacimiento. Usando formato dd/MM/yyyy.
+    // Test 2. Edad a partir de la fecha de nacimiento. Usando formato dd/MM/yyyy.
     DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     LocalDate fechaNac = LocalDate.parse("15/11/1998", fmt);
     LocalDate ahora = LocalDate.now();
